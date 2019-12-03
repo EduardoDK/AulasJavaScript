@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="comportamento.js"></script>
+    <title>.. : Formulário: : ..</title>
+</head>
+<style>
+    div,fieldset{
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+    }
+</style>
+<body>
+  
+    
+    <form action="">
+        <div>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" >
+        </div>
+        <div>
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" >
+            <button type="button" id="button1" onclick="mostrarSenha('senha','button1')">@</button>
+        </div>
+        <div>
+            <label for="confirmarSenha">Senha</label>
+            <input type="password" name="confirmarSenha" id="confirmarSenha" >
+            <button type="button" id="button2" onclick="mostrarSenha('confirmarSenha')">@</button>
+        </div>
+        <div>
+            <label for="idade">Idade</label>
+            <input type="number" name="number" id="number" >
+        </div>
+        <fieldset>
+                <legend>Opções:</legend>
+                <input type="radio" name="age" checked value="Masculino" id="masculino">
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="age" value="Feminino" id="feminino">
+                <label for="feminino">Feminino</label>
+                <input type="radio" name="age"   value="No" id="no">
+                <label for="no">Não Opinar</label>
+        </fieldset>
+        <fieldset>
+            <legend>Areas de Interesses:</legend>
+            <input type="checkbox" name="areas[]" value="html" id="html"> 
+            <label for="html">HTML:5</label>
+            <input type="checkbox" name="areas[]" value="css" id="css3">
+            <label for="css3">CSS3</label>
+            <input type="checkbox" name="areas[]" value="javascript" id="javascript">
+            <label for="javascript">Javascript</label>
+            <input type="checkbox" name="areas[]" value="php" id="php">
+            <label for="php">PHP</label>
+        </fieldset>
+        <div>
+            <label for="cep">CEP</label>
+            <input name="cep" id="cep"  pattern= "\d{5}-?\d{3}" />
+        </div>
+        <div>
+            <button type="submit" onclick="compararSenha()">Cadastrar</button>
+        </div>
+    </form>
+
+
+</body>
+</html>

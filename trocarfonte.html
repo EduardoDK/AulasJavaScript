@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>trocar fonte</title>
+</head>
+<body>
+
+    <script type="text/javascript">
+
+            function mudarTamanho(){
+
+               var Tamanho = document.getElementById("tamanho").value;
+               var paragrafos = document.getElementsByTagName("p");
+
+                for(i = 0; i < paragrafos.length ; i++){
+                    
+                    paragrafos[i].style.fontSize = Tamanho; 
+                    
+                }
+
+
+            }
+
+
+    </script>
+
+
+    <p>
+        <label for="tamanho">Tamanho</label>
+        <select id="tamanho" onchange="mudarTamanho()">
+        <option value="8px">8px</option>
+        <option value="10px">10px</option>
+        <option value="12px">12px</option>
+        <option value="14px">14px</option>
+        <option value="16px">16px</option>
+        <option value="28px">28px</option>
+    </select>
+
+    </p>
+
+    <h1>Anvisa libera venda de produtos a base de cannabis em </h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, est explicabo. Consectetur omnis nobis qui! Tenetur ab quisquam ratione dolorum exercitationem esse, mollitia, iste, dolores ad ullam vero magnam sequi?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ut tempore obcaecati consequatur veniam debitis pariatur deleniti veritatis eaque ipsum. Voluptas voluptatum natus quod odit, ut tempore tenetur consequatur exercitationem?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint officiis suscipit voluptate impedit commodi iusto dicta quae illum sequi laboriosam aliquam, voluptates laudantium eos voluptas numquam placeat molestias ea necessitatibus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe pariatur aspernatur debitis magni quidem doloremque quis, vero amet corrupti veniam repellat quo commodi alias reiciendis odit. Quasi magni sint quod.</p>
+</body>
+</html>

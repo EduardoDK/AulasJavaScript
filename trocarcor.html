@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TrocarCor</title>
+</head>
+        <script type="text/javascript">
+
+        function MudarCor(){
+            var color = document.getElementById("color").value;
+            var lista = document.getElementsByTagName("li");
+         
+
+            for(i = 0; i < lista.length; i++){
+                lista[i].style.color = color;
+               
+            }
+        }
+
+
+
+        </script>
+
+
+
+<body>
+    <li>
+        <label for="cor">Trocar Cor</label>
+        <input type="color" name="color" id="color" onchange="MudarCor()">
+       
+    </li>
+    <ul>
+        <li>Cenoura</li>
+        <li>Batata</li>
+        <li>Maça</li>
+        <li>Banana</li>
+        <li>Cebola</li>
+    </ul>
+    
+</body>
+</html>
