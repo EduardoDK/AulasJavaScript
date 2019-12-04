@@ -17,7 +17,7 @@
 <body>
   
     
-    <form action="">
+    <form action="cadastro.php" method="POST" onsubmit="return validacao();">
         <div>
             <label for="nome">Nome</label>
             <input type="text" name="nome" id="nome" >
@@ -30,12 +30,14 @@
         <div>
             <label for="confirmarSenha">Senha</label>
             <input type="password" name="confirmarSenha" id="confirmarSenha" onblur="compararSenha()">
-            <button type="button" id="button2"  onclick="mostrarSenha('confirmarSenha')">@</button>
-            <label for="senha"></label>
+            <button type="button" id="button2"  onclick="mostrarSenha('confirmarSenha','button2')">@</button>
+        <div>
+            <label for="senha" id="aviso"></label>
+        </div>
         </div>
         <div>
             <label for="idade">Idade</label>
-            <input type="number" name="number" id="number" >
+            <input type="number" name="number" id="idade" >
         </div>
         <fieldset>
                 <legend>Opções:</legend>
@@ -56,6 +58,7 @@
             <label for="javascript">Javascript</label>
             <input type="checkbox" name="areas[]" value="php" id="php">
             <label for="php">PHP</label>
+            <button type="button" onclick="visualizar()">Visualizar areas selecionadas</button>
         </fieldset>
         <div>
             <label for="cep">CEP</label>
