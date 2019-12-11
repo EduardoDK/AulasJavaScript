@@ -17,7 +17,7 @@
 <body>
   
     
-    <form action="cadastro.php" method="POST" onsubmit="return validacao();">
+    <form action="cadastro.html" method="POST" onsubmit="return validacao();">
         <div>
             <label for="nome">Nome</label>
             <input type="text" name="nome" id="nome" >
@@ -58,7 +58,7 @@
             <label for="javascript">Javascript</label>
             <input type="checkbox" name="areas[]" value="php" id="php">
             <label for="php">PHP</label>
-            <button type="button" onclick="visualizar()">Visualizar areas selecionadas</button>
+            <button type="button" id="btn3" onclick="visualizar()">Visualizar areas selecionadas</button>
         </fieldset>
         <div>
             <label for="cep">CEP</label>
